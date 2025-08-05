@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PETBIO Registro Biométrico</title>
+ 
+  <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <!-- LOGO LADO IZQUIERDO -->
+    <a href="/" class="flex items-center gap-2 text-xl font-bold text-emerald-600">
+      🐾 SIAC2025
+    </a>
+    
+    <!-- LOGO IMAGEN -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="./imagenes_guias_2025/logo_petbio_transparente.png" alt="Logo SIAC2025" class="h-10 w-auto">
+      <span class="font-bold text-gray-800 text-lg">SIAC 2025</span>
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA (solo en móvil) -->
+    <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- MENÚ DESKTOP -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t">
+    <nav class="flex flex-col gap-2 pt-2">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+
+
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Meta SEO y redes sociales -->
+  <meta name="description" content="Sistema centralizado para el registro biométrico y legal de mascotas en Colombia.">
+  <meta name="keywords" content="biometría, mascotas, registro, RNBM, Colombia, huellas, identificación">
+  <meta name="author" content="PETBIO11 RNBM">
+  <meta property="og:title" content="PETBIO Registro Biométrico">
+  <meta property="og:description" content="Registro Nacional Biométrico de Mascotas - PETBIO11">
+  <meta property="og:image" content="https://siac2025.com/img/logo_petbio.png">
+  <meta property="og:url" content="https://siac2025.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            petbioazul: '#27445D',
+            petbioverde: '#497D74',
+            petbioturquesa: '#72BCB3',
+            petbiofondo: '#EFE9D5'
+          },
+          fontFamily: {
+            bahn: ['Bahnschrift', 'Segoe UI', 'sans-serif']
+          }
+        }
+      }
+    }
+
+<meta name="google-adsense-account" content="ca-pub-1658139943154048">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1658139943154048"
+     crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-petbiofondo text-gray-800 font-bahn text-justify">
+
+<div style="font-family: 'Bahnschrift', sans-serif; background: url('/wp-content/uploads/huellitas-bg.png') repeat; background-size: contain; padding: 2rem; color: #27445D;">
+  <h1 style="font-size: 2rem; font-weight: bold; color: #497D74; text-align: center; margin-bottom: 1rem;">
+    Agradecimientos a los Diseñadores del Manual de Marca PETBIO11 RNBM
+  </h1>
+
+  <p style="font-size: 1.1rem; line-height: 1.6; background-color: rgba(255, 255, 255, 0.85); padding: 1rem; border-radius: 10px;">
+    Queremos expresar nuestro más sincero agradecimiento al grupo de diseñadores <strong>Luisa María Cardona Córdoba</strong>, <strong>Juan José Marín Gutiérrez</strong> y <strong>Andrés Felipe Parra</strong>, estudiantes del programa de Tecnología en Diseño Gráfico de la Institución Universitaria Pascual Bravo, por su compromiso y creatividad en la construcción del <strong>Manual de Marca PETBIO11 RNBM</strong>.
+
+    <br><br>
+    Esta obra, resultado de un ejercicio académico y colaborativo, fue cedida de manera libre y voluntaria al proyecto PETBIO bajo un contrato de cesión de derechos patrimoniales. Gracias a su talento, hoy contamos con una identidad visual sólida, coherente y profesional que potencia nuestra misión de transformar la identificación y el bienestar animal en Colombia.
+
+    <br><br>
+    A la <strong>Unidad de Emprendimiento</strong>, nuestro reconocimiento por facilitar este valioso proceso y por apoyar el crecimiento de iniciativas con propósito social y tecnológico como PETBIO.
+  </p>
+
+  <p style="text-align: right; margin-top: 2rem; font-weight: bold;">
+    — Juan Carlos Osorno Londoño <br>
+    Fundador PETBIO11 RNBM
+  </p>
+</div>
+
+</style>
+
+
+  <header class="bg-white p-6 shadow-md text-center rounded-b-2xl">
+    <h1 class="text-3xl font-bold text-petbioazul mb-2">🐾 PETBIO Registro Biométrico</h1>
+    <p class="text-base text-gray-600 text-justify">Sistema centralizado para identificación única de mascotas</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto mt-10 space-y-10 px-4">
+
+
+<section class="max-w-4xl mx-auto space-y-10 px-4 py-12">
+
+  <!-- Artículo 1 -->
+  <article class="bg-white p-8 rounded-xl shadow-md space-y-4">
+    <h2 class="text-2xl font-bold text-petbioazul">🐾 La Identificación Biométrica de Mascotas ya es una realidad en Colombia</h2>
+    <p class="text-gray-700 text-justify">
+      PETBIO11 RNBM ha puesto en marcha el primer sistema de registro biométrico para mascotas en Latinoamérica, validando identidades animales a través de patrones únicos de la trufa y morfología facial. Este avance tecnológico, hecho en Colombia, permite rastrear, proteger y custodiar la vida animal con mayor precisión, seguridad y responsabilidad que cualquier método tradicional.
+    </p>
+    <p class="text-gray-700 text-justify">
+      El sistema centralizado conecta imágenes, datos demográficos y ubicación geográfica con tecnologías de clasificación inteligente, ayudando a prevenir el abandono, facilitar adopciones, y recuperar animales extraviados. No se trata de un prototipo: es una realidad en funcionamiento, activa y al servicio de la vida.
+    </p>
+  </article>
+
+  <!-- Artículo 2 -->
+  <article class="bg-white p-8 rounded-xl shadow-md space-y-4">
+    <h2 class="text-2xl font-bold text-petbioazul">🔬 ¿Por qué la trufa es tan única como una huella digital?</h2>
+    <p class="text-gray-700 text-justify">
+      La trufa de un perro o gato —la parte frontal de su nariz— tiene surcos, formas y texturas irrepetibles, similares a una huella dactilar humana. En PETBIO11, hemos creado un sistema que escanea e interpreta esa morfología con tecnología biométrica avanzada, reconociendo patrones con precisión milimétrica.
+    </p>
+    <p class="text-gray-700 text-justify">
+      Esta biometría no solo permite registrar la identidad única de cada animal, sino que abre puertas a la trazabilidad en adopciones, el seguimiento clínico y la localización en caso de extravío. Ya no dependemos de chips costosos o placas fácilmente perdibles: la identidad está en el rostro de la mascota.
+    </p>
+  </article>
+
+  <!-- Artículo 3 -->
+  <article class="bg-white p-8 rounded-xl shadow-md space-y-4">
+    <h2 class="text-2xl font-bold text-petbioazul">🌱 El rol de PETBIO11 en la resolución de conflictos sociales y ambientales</h2>
+    <p class="text-gray-700 text-justify">
+      La falta de control en la tenencia de mascotas agrava problemas ambientales, sanitarios y de convivencia. PETBIO11 interviene desde la raíz: identificar con precisión permite planificar, intervenir y educar. Municipios, refugios y ciudadanos encuentran en esta plataforma una herramienta real para la custodia responsable.
+    </p>
+    <p class="text-gray-700 text-justify">
+      Desde Medellín, estamos demostrando que la tecnología no debe solo entretener: debe proteger la vida, crear comunidad y sanar las fracturas entre lo humano y lo animal. PETBIO11 no es un negocio; es un llamado urgente a repensar nuestra relación con los seres sintientes.
+    </p>
+  </article>
+
+  <!-- Artículo 4 -->
+  <article class="bg-white p-8 rounded-xl shadow-md space-y-4">
+    <h2 class="text-2xl font-bold text-petbioazul">💡 Biometría sin precedentes: una solución ética, no invasiva y accesible</h2>
+    <p class="text-gray-700 text-justify">
+      A diferencia de los chips subcutáneos o tatuajes, la biometría de PETBIO11 es completamente <strong>no invasiva</strong>. Basta una cámara y una guía inteligente para registrar a un animal. Esto democratiza el acceso, reduce costos y elimina riesgos médicos.
+    </p>
+    <p class="text-gray-700 text-justify">
+      Cualquier persona, desde cualquier dispositivo, puede capturar las imágenes necesarias y vincularlas a su perfil. Los datos se cifran, protegen y se integran al sistema nacional, con plena trazabilidad. Tecnología de vanguardia, sin violencia, sin exclusión.
+    </p>
+  </article>
+
+  <!-- Artículo 5 -->
+  <article class="bg-white p-8 rounded-xl shadow-md space-y-4">
+    <h2 class="text-2xl font-bold text-petbioazul">🌍 PETBIO11: cuando la tecnología protege lo más valioso: la vida</h2>
+    <p class="text-gray-700 text-justify">
+      En 2025, muchos hablan de inteligencia artificial, blockchain y automatización. Pocos hablan de proteger la vida. PETBIO11 toma esa bandera y la convierte en acción. Nuestra tecnología no compite, no vende publicidad: cuida.
+    </p>
+    <p class="text-gray-700 text-justify">
+      Es un proyecto que ha crecido con esfuerzo, sin subsidios, sin respaldo comercial, pero con una misión clara: <em>transformar el respeto por la vida en una política pública y un derecho para los animales</em>.
+    </p>
+    <p class="text-gray-700 text-justify">
+      Este no es solo un sistema. Es una plataforma de conciencia. Y apenas comienza.
+    </p>
+  </article>
+
+</section>
+
+
+
+<!-- Menú principal desplegable -->
+<div class="flex justify-end p-4">
+  <div class="relative inline-block text-left">
+<!--    
+<button onclick="toggleMenu()" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-petbioturquesa text-white font-bold hover:bg-petbioverde">
+  ☰ Menú
+</button>  
+ 
+
+<button onclick="toggleMenu()" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-lg border-2 border-petbioazul bg-petbioazul text-white font-semibold shadow-md hover:bg-petbioverde transition duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+  Menú
+</button>  -->  
+<button onclick="toggleMenu()" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-lg border-2 border-[#27445D] bg-[#27445D] text-white font-semibold shadow-md hover:bg-[#497D74] transition duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+  Menú
+</button>
+
+
+
+
+    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+      <a href="https://siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
+      <a href="https://registro.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🔗 PETBIO – SIAC</a>
+      <a href="/proyecto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📌 Proyecto PETBIO11</a>
+      <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📋 Casos de Uso</a>
+      <a href="/tecnologia.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">�� Tecnología</a>  
+      <a href="/alianzas.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🤝 Alianzas</a>
+      <a href="/contacto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📬 Contacto</a>
+      <a href="/gracias.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">✅ Gracias</a>
+      <a href="https://registro.siac2025.com/2025/06/28/1041/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🛡️ Política de Privacidad</a>
+      <a href="https://registro.siac2025.com/2025/06/28/1039/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">⚖️ Términos y Condiciones</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📖 Blog PETBIO</a>
+      <a href="https://siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.classList.toggle('hidden');
+  }
+</script>
+
+
+    <!-- Anuncio AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1658139943154048"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-1658139943154048"
+     data-ad-slot="2290295378"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <!-- Contenido legal y enlaces legales -->
+    <div id="politicas" class="space-y-10">
+      <!-- Aquí van los bloques legales que ya escribiste -->
+      <!-- Puedes pegar directamente todos los divs legales que ya tienes (política de privacidad, términos, cookies, etc.) -->
+<div class="bg-white p-8 rounded-xl shadow text-sm leading-relaxed">
+  <h2 class="text-center text-xl font-bold mb-4">🛡️ Política de Privacidad y Confidencialidad de Datos</h2>
+  <p><strong>PetBio11 RNBM — Registro Nacional Biométrico de Mascotas</strong><br>Última actualización: <strong>02 de mayo de 2025</strong></p>
+
+  <h3 class="mt-4 font-semibold">1. Introducción</h3>
+  <p>En <strong>PetBio11 RNBM</strong>, estamos comprometidos con la protección, privacidad y confidencialidad de los datos personales y biométricos recopilados de nuestros usuarios y sus mascotas.</p>
+
+  <h3 class="mt-4 font-semibold">2. Responsable del Tratamiento de Datos</h3>
+  <p><strong>Juan Carlos Osorno Londoño</strong><br>📧 juanosorno1231@gmail.com<br>📱 +57 304 360 5255</p>
+
+  <h3 class="mt-4 font-semibold">3. Finalidad del Tratamiento</h3>
+  <ul class="list-disc list-inside">
+    <li>Registro biométrico de mascotas</li>
+    <li>Apoyo en procesos de adopción y extravío</li>
+    <li>Validación de identidad de propietarios</li>
+    <li>Envío de notificaciones</li>
+    <li>Gestión de pagos</li>
+  </ul>
+
+  <h3 class="mt-4 font-semibold">4. Datos Recopilados</h3>
+  <ul class="list-disc list-inside">
+    <li>Datos personales y de contacto</li>
+    <li>Imágenes biométricas y características faciales</li>
+    <li>Archivos de evidencia de pago</li>
+    <li>Preferencias de contacto</li>
+  </ul>
+
+  <h3 class="mt-4 font-semibold">5. Confidencialidad y Seguridad</h3>
+  <p>La información se guarda en bases de datos seguras con cifrado, acceso restringido y backups periódicos.</p>
+
+  <h3 class="mt-4 font-semibold">6. Derechos de los Titulares</h3>
+  <ul class="list-disc list-inside">
+    <li>Consultar y actualizar datos</li>
+    <li>Revocar autorización</li>
+    <li>Ser informado del uso</li>
+    <li>Solicitar supresión por incumplimiento</li>
+  </ul>
+
+  <h3 class="mt-4 font-semibold">7. Tiempo de Conservación</h3>
+  <p>Los datos se conservarán el tiempo necesario para cumplir con las finalidades descritas o las exigidas por ley.</p>
+
+  <h3 class="mt-4 font-semibold">8. Cambios a esta Política</h3>
+  <p>Nos reservamos el derecho de modificar esta política. Las actualizaciones serán publicadas en nuestros canales oficiales.</p>
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow text-sm leading-relaxed">
+  <h2 class="text-center text-xl font-bold mb-4">📄 Términos y Condiciones de Uso – SIAC2025.com</h2>
+  <p><strong>Última actualización:</strong> 23 de mayo de 2025</p>
+
+  <p>Bienvenido a <strong>SIAC2025.com</strong> (en adelante “el sitio”), una plataforma desarrollada para la gestión y consulta del Registro Nacional Biométrico de Mascotas, impulsado por PETBIO11 RNBM.</p>
+  <p>Al acceder o utilizar este sitio, usted acepta estar sujeto a los presentes Términos y Condiciones. Si no está de acuerdo, no utilice el sitio.</p>
+
+  <h3 class="mt-4 font-semibold">1. Identidad del Proyecto y No Vinculación Gubernamental</h3>
+  <p>SIAC2025.com es un proyecto ciudadano e independiente, no vinculado con entidades gubernamentales. Estamos abiertos a colaboraciones institucionales.</p>
+
+  <h3 class="mt-4 font-semibold">2. Servicios Ofrecidos</h3>
+  <ul class="list-disc list-inside">
+    <li>Registro biométrico de mascotas</li>
+    <li>Fichas clínicas digitales</li>
+    <li>Apoyo en adopción y extravío</li>
+    <li>Gestión de pagos</li>
+  </ul>
+
+  <h3 class="mt-4 font-semibold">3. Uso Aceptable</h3>
+  <p>No debe usar el sitio para fines ilícitos ni vulnerar su seguridad. Los abusos pueden implicar suspensión de cuentas.</p>
+
+  <h3 class="mt-4 font-semibold">4. Propiedad Intelectual</h3>
+  <p>Todos los contenidos son propiedad de PETBIO11 RNBM, salvo mención expresa.</p>
+
+  <h3 class="mt-4 font-semibold">5. Privacidad y Protección de Datos</h3>
+  <p>Los datos se manejan según la Ley 1581 de 2012. Escriba a <strong>huellitas27rnbm@gmail.com</strong> para ejercer sus derechos.</p>
+
+  <h3 class="mt-4 font-semibold">6. Responsabilidad Limitada</h3>
+  <p>No garantizamos disponibilidad permanente. El uso del sitio es bajo su propio riesgo.</p>
+
+  <h3 class="mt-4 font-semibold">7. Pagos y Suscripciones</h3>
+  <p>Debe estar autorizado para usar el método de pago. Se guarda constancia de cada transacción.</p>
+
+  <h3 class="mt-4 font-semibold">8. Cancelación de Cuenta</h3>
+  <p>Puede cancelar su cuenta en cualquier momento. Nos reservamos el derecho de suspender por mal uso.</p>
+
+  <h3 class="mt-4 font-semibold">9. Cambios en estos Términos</h3>
+  <p>Los términos pueden actualizarse. La versión vigente estará siempre publicada aquí.</p>
+
+  <h3 class="mt-4 font-semibold">10. Contacto</h3>
+  <ul class="list-disc list-inside">
+    <li>Email: rnbm2025@gmail.com</li>
+    <li>Teléfono: +57 304 360 5255</li>
+    <li>Ubicación: Medellín, Colombia</li>
+  </ul>
+
+  <h3 class="mt-4 font-semibold">11. Vigencia</h3>
+  <p>Desde el 23 de mayo de 2025 mientras el sitio esté activo.</p>
+
+  <div class="bg-gray-100 border-l-4 border-gray-400 p-4 mt-4">
+    <p><strong>Nota:</strong> SIAC2025 es una iniciativa independiente. <a href="https://registro.siac2025.com/2025/06/28/1041/" class="text-blue-600 underline">Más información aquí</a>.</p>
+  </div>
+</div>
+
+<div class="bg-white p-8 rounded-xl shadow text-sm leading-relaxed">
+  <h2 class="text-xl font-bold mb-4">🔁 Política de Devolución y Reembolso</h2>
+  <p>Debido a la naturaleza digital y personalizada del servicio, aplicamos estas condiciones:</p>
+  <ul class="list-disc list-inside">
+    <li>Reclamación: dentro de los 7 días hábiles posteriores a la entrega</li>
+    <li>Causales válidas: error técnico, duplicidad o inconsistencia</li>
+    <li>No aplicable si el servicio se entregó correctamente</li>
+    <li>Solicitud a <strong>huellitas27rnbm@gmail.com</strong> con evidencia</li>
+    <li>Respuesta en 5 días, reembolso en 10 si aplica</li>
+    <li>Transferencia bancaria al titular registrado</li>
+  </ul>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow text-sm mt-10">
+  <h2 class="text-lg font-bold mb-2">🍪 Política de Cookies</h2>
+  <p>Este sitio utiliza cookies propias y de terceros para mejorar su experiencia. Puede configurar o rechazar en su navegador. Más info en la <a href="https://site-mscdp54gx.godaddysites.com/pol%C3%ADtica-de-privacidad-1" class="text-petbioazul underline">Política de Privacidad</a>.</p>
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow text-sm mt-10">
+  <h2 class="text-lg font-bold mb-2">⚖️ Aviso Legal</h2>
+  <p>Este sitio es operado por <strong>Juan Carlos Osorno Londoño</strong>. Uso informativo, sin fines de lucro. Derechos reservados conforme a la legislación colombiana.</p>
+</div>
+
+
+<!-- Noticias PETBIO11 desde el Registro de SIAC --
+<section id="publicaciones-petbio" class="max-w-3xl mx-auto mt-12 space-y-6">
+  <h2 class="text-2xl font-bold text-petbioazul text-center">📢 Noticias PETBIO11 desde el Registro</h2>
+  <div id="rss-feed" class="space-y-4"></div>
+</section>
+
+<script>
+  async function cargarRSS() {
+    const rssUrl = 'https://registro.siac2025.com/feed/';
+    const proxy = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl);
+    
+    try {
+      const response = await fetch(proxy);
+      const data = await response.json();
+
+      const contenedor = document.getElementById('rss-feed');
+      data.items.slice(0, 3).forEach(item => {
+        const div = document.createElement('div');
+        div.className = "bg-white p-6 rounded-lg shadow-md";
+        div.innerHTML = `
+          <h3 class="text-xl font-semibold text-petbioazul mb-2">${item.title}</h3>
+          <p class="text-gray-700 mb-2">${item.pubDate.split(' ')[0]}</p>
+          <p class="text-gray-600 mb-4">${item.description.substring(0, 200)}...</p>
+          <a href="${item.link}" target="_blank" class="inline-block bg-petbioverde text-white px-4 py-2 rounded font-semibold hover:bg-[#3c665e]">Leer más</a>
+        `;
+        contenedor.appendChild(div);
+      });
+    } catch (error) {
+      console.error('Error al cargar el feed:', error);
+      document.getElementById('rss-feed').innerHTML = "<p class='text-center text-gray-500'>No se pudieron cargar las publicaciones.</p>";
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', cargarRSS);
+</script>
+-->
+
+
+<section id="noticias-petbio" class="my-8 px-4 max-w-5xl mx-auto">
+  <h2 class="text-2xl font-bold text-petbioverde mb-4">📢 Noticias desde el Registro PETBIO11</h2>
+  <div id="feedNoticias" class="grid md:grid-cols-3 gap-6 text-sm text-gray-800">
+    <p id="feedError" class="col-span-full text-center text-red-500 hidden">No se pudieron cargar las publicaciones.</p>
+  </div>
+</section>
+
+
+<section class="max-w-3xl mx-auto py-8 space-y-6">
+
+  <!-- Video 1 -->
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="text-xl font-bold text-petbioazul mb-2">🎬 Ver Prototipo PETBIO11 en funcionamiento</h3>
+    <p class="text-gray-700 mb-4">Explora el video de navegación por la interfaz, registro y funciones clave del sistema biométrico.</p>
+    <a href="https://www.youtube.com/watch?v=JaJXiBWbrNE" target="_blank"
+       class="inline-block bg-petbioazul text-white px-5 py-2 rounded-lg font-semibold hover:bg-petbioverde transition">
+      ▶️ Reproducir en YouTube
+    </a>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="text-xl font-bold text-petbioazul mb-2">🛡️ Seguridad con Snort – Monitoreo de Red</h3>
+    <p class="text-gray-700 mb-4">Presentación técnica del IDS usando Snort, aplicable a la seguridad del entorno PETBIO11.</p>
+    <a href="https://www.youtube.com/watch?v=ZZ92bFL_5Fc" target="_blank"
+       class="inline-block bg-petbioazul text-white px-5 py-2 rounded-lg font-semibold hover:bg-petbioverde transition">
+      ▶️ Ver en YouTube
+    </a>
+  </div>
+
+</section>
+
+
+<div class="bg-white max-w-xl mx-auto text-center p-8 rounded-xl shadow mt-10">
+  <h2 class="text-xl font-bold mb-4">Cuidado integral para tus Mascotas</h2>
+  <h3 class="mb-6 text-lg font-medium">Querido visitante, continúe con su Registro de Usuario</h3>
+
+  <a href="https://petbio.siac2025.com/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
+    🐾 Regístrate ahora
+  </a>
+  <a href="https://petbio.siac2025.com/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
+    🔑 Ya tengo cuenta
+  </a>
+
+  <div class="mt-6 space-y-3">
+    <a href="https://rnbm2025.wordpress.com/2025/05/02/politica-de-tratamiento-de-datos/" target="_blank" class="inline-block bg-[#1B2F47] text-white px-5 py-2 rounded-lg font-semibold text-sm">🔗 Tratamiento de Datos</a>
+    <a href="https://site-mscdp54gx.godaddysites.com/pol%C3%ADtica-de-privacidad-1" target="_blank" class="inline-block bg-[#226E68] text-white px-5 py-2 rounded-lg font-semibold text-sm">🔗 Política de Privacidad</a>
+    <a href="https://site-mscdp54gx.godaddysites.com/t%C3%A9rminos-y-condiciones" target="_blank" class="inline-block bg-[#497D74] text-white px-5 py-2 rounded-lg font-semibold text-sm">🔗 Términos y Condiciones</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <!-- Botones de acción -->
+  </main>
+
+<!-- Aviso de Cookies -
+<div id="cookie-banner" class="fixed bottom-4 left-4 right-4 bg-white shadow-lg rounded-lg p-4 border text-sm z-50">
+  <p class="mb-2">🍪 Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta su uso. <a href="https://site-mscdp54gx.godaddysites.com/pol%C3%ADtica-de-privacidad-1" target="_blank" class="underline text-blue-600">Leer más</a></p>
+  <button onclick="document.getElementById('cookie-banner').style.display='none'" class="bg-petbioverde text-white px-4 py-2 rounded">Aceptar</button>
+</div>  -->
+
+
+<!-- Aviso de Cookies -->
+<div id="cookie-banner" class="fixed bottom-4 left-4 right-4 bg-white shadow-lg rounded-lg p-4 border text-sm z-50">
+  <p class="mb-2">
+    🍪 Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta su uso.
+    <a href="https://site-mscdp54gx.godaddysites.com/pol%C3%ADtica-de-privacidad-1" target="_blank" class="underline text-blue-600">Leer más</a>
+  </p>
+  <div class="text-right">
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="bg-petbioverde text-white px-4 py-2 rounded hover:bg-[#3c665e]">
+      Aceptar y Cerrar
+    </button>
+  </div>
+</div>
+
+
+  <footer class="text-center text-sm text-gray-600 mt-10 py-6">
+    &copy; 2025 PETBIO Registro Biométrico | RNBM Colombia
+  </footer>
+
+<script>
+  async function cargarNoticias() {
+    const contenedor = document.getElementById('feedNoticias');
+    const errorMsg = document.getElementById('feedError');
+
+    try {
+      const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://registro.siac2025.com/feed/');
+      const data = await res.json();
+
+      if (data.status !== 'ok') throw new Error('Feed inválido');
+
+      const publicaciones = data.items.slice(0, 3); // Solo 3 noticias
+
+      publicaciones.forEach(pub => {
+        const card = document.createElement('article');
+        card.className = "bg-white rounded-xl shadow p-4 hover:shadow-md transition";
+
+        card.innerHTML = `
+          <img src="${pub.thumbnail || 'https://registro.siac2025.com/wp-content/uploads/2025/07/cropped-IMG-20250705-WA0006.jpg'}"
+               alt="${pub.title}" class="w-full h-40 object-cover rounded-md mb-3">
+          <h3 class="font-semibold text-lg text-petbioturquesa mb-2">${pub.title}</h3>
+          <p class="text-sm text-gray-700 mb-3">${pub.description.replace(/<[^>]+>/g, '').substring(0, 140)}...</p>
+          <a href="${pub.link}" target="_blank" class="text-petbioverde font-medium hover:underline">Leer más</a>
+        `;
+
+        contenedor.appendChild(card);
+      });
+
+    } catch (error) {
+      console.error('Error al cargar el feed:', error);
+      errorMsg.classList.remove('hidden');
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', cargarNoticias);
+</script>
+
+
+</body>
+</html>

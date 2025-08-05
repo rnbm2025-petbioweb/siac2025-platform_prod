@@ -1,0 +1,8 @@
+sudo tee robots.txt > /dev/null <<EOF
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Allow: /
+
+Sitemap: https://siac2025.com/sitemap.xml
+EOF

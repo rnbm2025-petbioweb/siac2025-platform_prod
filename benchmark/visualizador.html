@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Benchmark HUELLIT@S 🐾</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      color: #333;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h1 { color: #4CAF50; text-align: center; }
+    canvas {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 10px;
+      display: block;
+      margin: auto;
+    }
+    .error {
+      color: red;
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Benchmark HUELLIT@S 🐾</h1>
+  <p style="text-align:center;">Visualización de <strong>ttime</strong> (tiempo total) por solicitud usando ApacheBench.</p>
+  <canvas id="grafica" width="900" height="400"></canvas>
+  <div id="error" class="error"></div>
+
+  <script>
+    async function cargarYGraficar() {
+      const url = "https://siac2025.com/benchmark/resultados.txt";
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("No se pudo obtener el archivo (status " + res.status + ")");
+
+        const texto = await res.text();
+        const lineas = texto.trim().split("\n");
+        console.log("Total líneas:", lineas.length);
+
+        const datos = [];
+        for (let i = 1; i < lineas.length; i++) {
+          const partes = lineas[i].trim().split(/\s+/);
+          if (partes.length < 6) continue;
+          const ttime = parseInt(partes[partes.length - 2]);
+          if (!isNaN(ttime)) datos.push({ x: i, y: ttime });
+        }
+
+        if (datos.length === 0) {
+          document.getElementById('error').textContent = '⚠️ No se encontraron datos válidos para graficar.';
+          return;
+        }
+
+        const ctx = document.getElementById('grafica').getContext('2d');
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            datasets: [{
+              label: 'Tiempo total por solicitud (ms)',
+              data: datos,
+              borderColor: '#007bff',
+              backgroundColor: 'rgba(0,123,255,0.1)',
+              fill: true,
+              tension: 0.2
+            }]
+          },
+          options: {
+            scales: {
+              x: { title: { display: true, text: 'Solicitud' } },
+              y: { title: { display: true, text: 'Tiempo (ms)' } }
+            },
+            plugins: {
+              title: {
+                display: true,
+                text: 'ApacheBench – RegistroHuellitas27.html'
+              }
+            }
+          }
+        });
+      } catch (e) {
+        console.error("Error al cargar o graficar:", e);
+        document.getElementById('error').textContent = '⚠️ Error: ' + e.message;
+      }
+    }
+
+    cargarYGraficar();
+  </script>
+</body>
+</html>

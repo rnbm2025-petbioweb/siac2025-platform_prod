@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual de Marca PETBIO11 – Identidad Visual para Bienestar Animal</title>
+  <meta name="description" content="Consulta el manual de identidad corporativa de PETBIO11. Conoce nuestros colores, logotipo, misión, visión y normas de uso para representar con coherencia la marca líder en biometría para mascotas en Colombia.">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #f9f9f9;
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #27445D;
+    }
+    h1 {
+      border-bottom: 4px solid #497D74;
+      padding-bottom: 0.3em;
+    }
+    .color-swatch {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      margin: 5px;
+      border: 1px solid #ccc;
+    }
+    .banner-info {
+      background-color: #27445D;
+      color: #fff;
+      padding: 1em;
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 2em;
+    }
+    .banner-info a {
+      color: #EFE9D5;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner-info">
+    <strong>Nota:</strong> Este sitio web forma parte oficial del ecosistema digital de <a href="https://siac2025.com" target="_blank">siac2025.com</a>. Toda la información publicada en <strong>registro.siac2025.com</strong> está respaldada y administrada por nuestra plataforma.
+  </div>
+
+  <h1>Manual de Marca PETBIO11</h1>
+  <p>Este Manual de Identidad Corporativa establece las bases visuales y comunicativas que definen la identidad de PETBIO11. Nuestro objetivo es garantizar una representación coherente, profesional y reconocible en todos los canales y materiales asociados.</p>
+
+  <h2>1. ¿Quiénes somos?</h2>
+  <p>PETBIO11 RNBM es una iniciativa colombiana que busca transformar la gestión del bienestar animal mediante el Registro Único Biométrico de Mascotas (RUBM), promoviendo una tenencia responsable y facilitando el acceso a servicios relacionados con la salud y protección animal.</p>
+
+  <h2>2. Misión y Visión</h2>
+  <h3>Misión</h3>
+  <p>Desarrollar soluciones tecnológicas innovadoras que mejoren la calidad de vida de las mascotas mediante un sistema de identificación biométrica único, seguro y accesible.</p>
+  <h3>Visión</h3>
+  <p>Ser el referente nacional en gestión digital del bienestar animal en Colombia, garantizando protección, trazabilidad y colaboración interinstitucional.</p>
+
+  <h2>3. Valores de Marca</h2>
+  <ul>
+    <li><strong>Tenencia responsable</strong></li>
+    <li><strong>Innovación tecnológica</strong></li>
+    <li><strong>Seguridad y trazabilidad</strong></li>
+    <li><strong>Colaboración institucional</strong></li>
+    <li><strong>Bienestar animal</strong></li>
+  </ul>
+
+  <h2>4. Tono de Comunicación</h2>
+  <p>Nuestra voz es empática, tecnológica y confiable. Usamos un lenguaje claro, educativo y accesible, dirigido tanto a cuidadores de mascotas como a instituciones públicas y privadas.</p>
+
+  <h2>5. Identidad Visual</h2>
+  <h3>Colores corporativos</h3>
+  <div class="color-swatch" style="background-color:#27445D;" title="#27445D"></div>
+  <div class="color-swatch" style="background-color:#497D74;" title="#497D74"></div>
+  <div class="color-swatch" style="background-color:#72BCB3;" title="#72BCB3"></div>
+  <div class="color-swatch" style="background-color:#EFE9D5;" title="#EFE9D5"></div>
+  <p>Estos colores representan nuestra marca y deben utilizarse según las especificaciones del manual gráfico.</p>
+
+  <h3>Tipografías</h3>
+  <p>Fuente principal: Bahnschrift en sus variantes <em>Bold Semicondensed</em>, <em>Condensed</em> y <em>SemiLight Condensed</em>.</p>
+
+  <h2>6. Descarga del Manual</h2>
+  <p>Puede consultar el documento completo con logotipo, usos gráficos, aplicaciones y restricciones aquí:</p>
+  <p><a href="manual-de-marca-petbio.pdf" download>📄 Descargar Manual de Marca PETBIO11 (PDF)</a></p>
+
+</body>
+</html>
+o

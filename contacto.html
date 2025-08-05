@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - PETBIO11</title>
+ 
+   <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <!-- LOGO LADO IZQUIERDO -->
+    <a href="/" class="flex items-center gap-2 text-xl font-bold text-emerald-600">
+      🐾 SIAC2025
+    </a>
+    
+    <!-- LOGO IMAGEN -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="./imagenes_guias_2025/logo_petbio_transparente.png" alt="Logo SIAC2025" class="h-10 w-auto">
+      <span class="font-bold text-gray-800 text-lg">SIAC 2025</span>
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA (solo en móvil) -->
+    <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- MENÚ DESKTOP -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t">
+    <nav class="flex flex-col gap-2 pt-2">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+
+ 
+  <meta name="description" content="Ponte en contacto con el equipo de PETBIO11 para consultas, alianzas o soporte sobre el sistema biométrico para mascotas.">
+  <meta name="keywords" content="contacto, petbio, biometría animal, soporte, alianzas, RNBM">
+  <meta name="author" content="Juan Carlos Osorno Londoño">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            petbioazul: '#27445D',
+            petbioverde: '#497D74',
+            petbioturquesa: '#72BCB3',
+            petbiofondo: '#EFE9D5'
+          },
+          fontFamily: {
+            bahn: ['Bahnschrift', 'Segoe UI', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-petbiofondo font-bahn text-gray-800">
+  <header class="bg-white shadow-md p-6 text-center">
+    <h1 class="text-3xl font-bold text-petbioverde">📬 Contáctanos</h1>
+    <p class="text-base text-gray-600 mt-2">Estamos aquí para resolver tus dudas o escuchar tus propuestas de colaboración</p>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-6 py-12 space-y-10">
+
+    <section class="bg-white p-8 rounded-lg shadow">
+      <h2 class="text-xl font-bold text-petbioazul mb-4">📞 Información de contacto</h2>
+      <ul class="space-y-2 text-gray-700">
+        <li><strong>Email:</strong> huellitas27rnbm@gmail.com</li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/573043605255" class="text-petbioverde underline">+57 304 360 5255</a></li>
+        <li><strong>Ubicación:</strong> Medellín, Colombia</li>
+        <li><strong>Horario:</strong> Lunes a Viernes, 8:00 am – 5:00 pm</li>
+      </ul>
+    </section>
+
+    <section class="bg-white p-8 rounded-lg shadow">
+      <h2 class="text-xl font-bold text-petbioazul mb-4">📝 Envíanos un mensaje</h2>
+      <form action="https://formsubmit.co/huellitas27rnbm@gmail.com" method="POST" class="space-y-4">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://siac2025.com/gracias.html">
+
+        <input type="text" name="nombre" required placeholder="Tu nombre" class="w-full p-3 border rounded">
+        <input type="email" name="email" required placeholder="Tu correo electrónico" class="w-full p-3 border rounded">
+        <textarea name="mensaje" rows="5" required placeholder="Tu mensaje..." class="w-full p-3 border rounded"></textarea>
+
+        <button type="submit" class="bg-petbioazul text-white px-6 py-3 rounded hover:bg-petbioverde transition">Enviar mensaje</button>
+      </form>
+    </section>
+
+    <div class="flex justify-center gap-4">
+      <a href="/index.html" class="bg-petbioturquesa text-white px-5 py-2 rounded hover:bg-petbioverde">🏠 Inicio</a>
+      <a href="/alianzas.html" class="bg-[#497D74] text-white px-5 py-2 rounded hover:bg-petbioazul">🤝 Alianzas</a>
+    </div>
+
+  </main>
+
+  <footer class="bg-white mt-16 py-6 text-center text-sm text-gray-600">
+    &copy; 2025 PETBIO11 - RNBM | Todos los derechos reservados
+  </footer>
+</body>
+</html>

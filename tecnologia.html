@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnología - PETBIO11 RNBM</title>
+ 
+   <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <!-- LOGO LADO IZQUIERDO -->
+    <a href="/" class="flex items-center gap-2 text-xl font-bold text-emerald-600">
+      🐾 SIAC2025
+    </a>
+    
+    <!-- LOGO IMAGEN -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="./imagenes_guias_2025/logo_petbio_transparente.png" alt="Logo SIAC2025" class="h-10 w-auto">
+      <span class="font-bold text-gray-800 text-lg">SIAC 2025</span>
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA (solo en móvil) -->
+    <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- MENÚ DESKTOP -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t">
+    <nav class="flex flex-col gap-2 pt-2">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+
+ 
+  <meta name="description" content="Infraestructura técnica del sistema PETBIO11 para identificación biométrica de mascotas.">
+  <meta name="keywords" content="tecnología, biometría, mascotas, arquitectura software, PETBIO11, infraestructura">
+  <meta name="author" content="Juan Carlos Osorno Londoño">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            petbioazul: '#27445D',
+            petbioverde: '#497D74',
+            petbioturquesa: '#72BCB3',
+            petbiofondo: '#EFE9D5'
+          },
+          fontFamily: {
+            bahn: ['Bahnschrift', 'Segoe UI', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-petbiofondo font-bahn text-gray-800">
+  <header class="bg-white shadow-md p-6 text-center">
+    <h1 class="text-3xl font-bold text-petbioverde">🧠 Tecnología e Infraestructura</h1>
+    <p class="text-base text-gray-600 mt-2">Conoce los componentes técnicos de PETBIO11</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-12">
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🧩 Arquitectura del Sistema</h2>
+      <p>El sistema PETBIO11 está construido sobre una arquitectura modular y contenerizada, que permite escalabilidad, mantenimiento ágil y alta disponibilidad.</p>
+      <ul class="list-disc list-inside mt-2 space-y-1">
+        <li>Contenedores Docker para segmentación de servicios.</li>
+        <li>Servidor web Apache con PHP y HTML.</li>
+        <li>Frontend web desarrollado con TailwindCSS + JavaScript.</li>
+        <li>Base de datos MySQL/MariaDB en AWS RDS.</li>
+        <li>Integración con CMS WordPress (módulos informativos y pagos).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">☁️ Infraestructura en la Nube</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>AWS S3:</strong> almacenamiento de imágenes, biometría, certificados.</li>
+        <li><strong>AWS RDS:</strong> gestión segura de datos de usuarios y mascotas.</li>
+        <li><strong>AWS EC2 y Lambda:</strong> escalabilidad para procesos pesados y servicios serverless.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🔐 Seguridad de la Información</h2>
+      <p>El sistema implementa cifrado AES para datos sensibles, certificados SSL para comunicación cifrada, backups automáticos y autenticación de doble capa.</p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">📱 Tecnología Móvil</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Aplicativo Android e iOS desarrollado en App Inventor.</li>
+        <li>Captura biométrica con cámaras móviles (mínimo 8 MP).</li>
+        <li>Acceso a datos sincronizados en tiempo real vía API REST.</li>
+      </ul>
+   </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🧪 Pruebas y Compatibilidad</h2>
+      <p>El sistema ha sido probado en navegadores modernos (Chrome, Firefox, Edge, Safari) y en dispositivos móviles Android 8+ y iOS 13+ con resultados óptimos en velocidad y UX.</p>
+    </section>
+
+    <section class="flex flex-wrap justify-center gap-4">
+      <a href="/index.html" class="bg-petbioturquesa hover:bg-petbioverde text-white px-6 py-3 rounded shadow">🏠 Volver al Inicio</a>
+      <a href="/casos-de-uso.html" class="bg-[#497D74] hover:bg-petbioazul text-white px-6 py-3 rounded shadow">📋 Casos de Uso</a>
+      <a href="https://registro.siac2025.com/formularios/RegistroHuellitas27.html" class="bg-[#3C6E71] hover:bg-[#2c5659] text-white px-6 py-3 rounded shadow">📲 Regístrate</a>
+    </section>
+
+<section class="max-w-5xl mx-auto py-12 space-y-12">
+
+<!--
+  <!-- Video del sistema PETBIO11 --
+  <div>
+    <h3 class="text-xl font-bold text-petbioazul mb-2">🎬 Prototipo PETBIO11 en funcionamiento</h3>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full rounded-lg shadow-md" src="https://www.youtube.com/embed/JaJXiBWbrNE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="mt-2 text-gray-700">Video demostrativo del sistema PETBIO11 – RNBM mostrando los formularios, interfaz responsiva y módulos clave.</p>
+  </div>
+
+  <!-- Video de seguridad SNORT --
+  <div>
+    <h3 class="text-xl font-bold text-petbioazul mb-2">🛡️ Seguridad de Red con Snort</h3>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full rounded-lg shadow-md" src="https://www.youtube.com/embed/ZZ92bFL_5Fc" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <p class="mt-2 text-gray-700">Aplicación de reglas de detección en red, útil como respaldo técnico en infraestructura segura para PETBIO11.</p>
+  </div>  -->
+
+  <!-- Short opcional como enlace -->
+   
+<section class="max-w-3xl mx-auto py-8 space-y-6">
+
+  <!-- Video 1 -->
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="text-xl font-bold text-petbioazul mb-2">🎬 Ver Prototipo PETBIO11 en funcionamiento</h3>
+    <p class="text-gray-700 mb-4">Explora el video de navegación por la interfaz, registro y funciones clave del sistema biométrico.</p>
+    <a href="https://www.youtube.com/watch?v=JaJXiBWbrNE" target="_blank"
+       class="inline-block bg-petbioazul text-white px-5 py-2 rounded-lg font-semibold hover:bg-petbioverde transition">
+      ▶️ Reproducir en YouTube
+    </a>
+  </div>
+
+  <!-- Video 2 -->
+  <div class="bg-white p-6 rounded-lg shadow-md">
+    <h3 class="text-xl font-bold text-petbioazul mb-2">🛡️ Seguridad con Snort – Monitoreo de Red</h3>
+    <p class="text-gray-700 mb-4">Presentación técnica del IDS usando Snort, aplicable a la seguridad del entorno PETBIO11.</p>
+    <a href="https://www.youtube.com/watch?v=ZZ92bFL_5Fc" target="_blank"
+       class="inline-block bg-petbioazul text-white px-5 py-2 rounded-lg font-semibold hover:bg-petbioverde transition">
+      ▶️ Ver en YouTube
+    </a>
+  </div>
+
+</section>
+
+
+
+  <div>
+    <h3 class="text-xl font-bold text-petbioazul mb-2">📱 Short en YouTube</h3>
+    <a href="https://www.youtube.com/shorts/H08FNqszh4k" target="_blank" class="inline-block text-petbioverde underline">
+      Ver video corto sobre PETBIO11
+    </a>
+  </div>    
+
+
+
+</section>
+
+
+  </main>
+
+  <footer class="bg-white mt-16 py-6 text-center text-sm text-gray-600">
+    &copy; 2025 PETBIO11 - RNBM | Todos los derechos reservados
+  </footer>
+</body>
+</html>

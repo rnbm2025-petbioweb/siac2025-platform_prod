@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto PETBIO11 - Huellitas27</title>
+  
+    <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
+    
+    <!-- LOGO LADO IZQUIERDO -->
+    <a href="/" class="flex items-center gap-2 text-xl font-bold text-emerald-600">
+      🐾 SIAC2025
+    </a>
+    
+    <!-- LOGO IMAGEN -->
+    <a href="/" class="flex items-center space-x-2">
+      <img src="./imagenes_guias_2025/logo_petbio_transparente.png" alt="Logo SIAC2025" class="h-10 w-auto">
+      <span class="font-bold text-gray-800 text-lg">SIAC 2025</span>
+    </a>
+
+    <!-- BOTÓN HAMBURGUESA (solo en móvil) -->
+    <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- MENÚ DESKTOP -->
+    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t">
+    <nav class="flex flex-col gap-2 pt-2">
+      <a href="/" class="hover:text-emerald-600">Inicio</a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
+      <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
+    </nav>
+  </div>
+</header>
+
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+
+
+  <meta name="description" content="Proyecto institucional de identificación biométrica para mascotas en Colombia. Plataforma PETBIO11 - RNBM.">
+  <meta name="keywords" content="biometría, mascotas, identificación, bienestar animal, Colombia, RNBM, Huellitas27">
+  <meta name="author" content="Juan Carlos Osorno Londoño">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            petbioazul: '#27445D',
+            petbioverde: '#497D74',
+            petbioturquesa: '#72BCB3',
+            petbiofondo: '#EFE9D5'
+          },
+          fontFamily: {
+            bahn: ['Bahnschrift', 'Segoe UI', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-petbiofondo font-bahn text-gray-800">
+  <header class="bg-white shadow-md p-6 text-center">
+    <h1 class="text-4xl font-bold text-petbioverde animate-fade-in">🐾 Proyecto PETBIO11 - Huellitas27</h1>
+    <p class="text-base text-gray-600 mt-2">Identificación Biométrica de Mascotas en Colombia</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-6 py-12 space-y-12">
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🐾 Introducción</h2>
+      <p>
+        PETBIO11 - Huellitas27 es una plataforma nacional que brinda soluciones de identificación biométrica no invasiva para mascotas, integrando tecnología de punta, estándares de bienestar animal y servicios conectados a redes de atención, regulación y movilidad. 
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🎯 Planteamiento del Problema</h2>
+      <p>
+        En Colombia, no existe un sistema nacional unificado que permita identificar y monitorear a cada mascota de forma biométrica. Esto genera dificultades en la trazabilidad, cuidado médico, movilidad legal, y reunificación en casos de extravío. Además, se desaprovecha el potencial de datos para la investigación veterinaria.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🌟 Objetivo General</h2>
+      <p>
+        Desarrollar una solución tecnológica accesible que permita el registro, identificación y gestión de información biométrica de mascotas a nivel nacional, garantizando bienestar, trazabilidad y apoyo científico.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🔍 Objetivos Específicos</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Implementar identificación facial y nasal en mascotas.</li>
+        <li>Facilitar la gestión de datos clínicos y pasaporte sanitario.</li>
+        <li>Ofrecer seguimiento de salud y comportamiento.</li>
+        <li>Apoyar procesos de adopción y recuperación por extravío.</li>
+        <li>Incluir mecanismos de integración con entidades de transporte y regulación.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">📦 Alcance del Proyecto</h2>
+      <p>
+        El sistema contempla acceso web y móvil, módulos de registro de usuario, mascotas, pagos y monitoreo, respaldado por una infraestructura contenerizada con Docker, PHP, MySQL, WordPress y servicios AWS para asegurar escalabilidad y seguridad.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-2xl text-petbioazul font-bold mb-4">🔒 Confianza y Tecnología</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Infraestructura escalable con Docker y AWS (S3, RDS, EC2).</li>
+        <li>Seguridad con cifrado AES, backups y acceso encriptado.</li>
+        <li>Alta disponibilidad, rendimiento y sincronización en tiempo real.</li>
+      </ul>
+    </section>
+
+    <section class="flex flex-wrap justify-center gap-4 mt-10">
+      <a href="/index.html" class="bg-petbioturquesa hover:bg-petbioverde text-white px-6 py-3 rounded shadow">🏠 Volver al Inicio</a>
+      <a href="/manual-marca.html" class="bg-[#497D74] hover:bg-petbioazul text-white px-6 py-3 rounded shadow">📘 Manual de Marca</a>
+      <a href="https://registro.siac2025.com/formularios/RegistroHuellitas27.html" class="bg-[#3C6E71] hover:bg-[#2c5659] text-white px-6 py-3 rounded shadow">🐾 Regístrate Ahora</a>
+      <a href="https://www.youtube.com/watch?v=quyl7DAVUVw" class="bg-[#1B2F47] hover:bg-[#142d39] text-white px-6 py-3 rounded shadow" target="_blank">🎥 Ver Video Prototipo</a>
+    </section>
+  </main>
+
+  <footer class="bg-white mt-16 py-6 text-center text-sm text-gray-600">
+    &copy; 2025 PETBIO11 - RNBM | Todos los derechos reservados
+  </footer>
+
+  <style>
+    .animate-fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</body>
+</html>
+
