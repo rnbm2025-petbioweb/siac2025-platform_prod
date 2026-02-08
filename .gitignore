@@ -1,1 +1,9 @@
 siac2025-platform/
+
+
+# Backups y archivos pesados
+*.tar.gz
+*.zip
+*.sql
+Residuos/
+backup_*/
