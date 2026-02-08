@@ -24,11 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
   console.log("✅ Búsqueda pública inicializada");
 
   /* ===============================
+<<<<<<< HEAD
      BASE API
   =============================== */
   const API_BASE = 'https://publicpetbio.siac2025.com/dir_controladores';
 
   /* ===============================
+=======
+>>>>>>> 5784198c (Respaldo completo del estado actual del servidor SIAC2025 antes de actualización - 2026-02-08)
      MOSTRAR / OCULTAR BUSCADOR
   =============================== */
   btnEncontre.addEventListener('click', () => {
@@ -37,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ===============================
+<<<<<<< HEAD
      BUSCAR MASCOTA CON ENTER
   =============================== */
   input.addEventListener('keypress', (e) => {
@@ -78,6 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ===============================
      BOTÓN BUSCAR
+=======
+     BUSCAR MASCOTA
+>>>>>>> 5784198c (Respaldo completo del estado actual del servidor SIAC2025 antes de actualización - 2026-02-08)
   =============================== */
   btnBuscar.addEventListener('click', async (e) => {
     e.preventDefault();
@@ -95,11 +102,22 @@ document.addEventListener('DOMContentLoaded', () => {
     resultado.innerHTML = `<p class="text-gray-600">🔍 Buscando...</p>`;
 
     try {
+<<<<<<< HEAD
       const res = await fetch(`${API_BASE}/buscar_mascota_publica.php`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: `codigo=${encodeURIComponent(codigo)}`
       });
+=======
+      const res = await fetch(
+        'https://petbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: `codigo=${encodeURIComponent(codigo)}`
+        }
+      );
+>>>>>>> 5784198c (Respaldo completo del estado actual del servidor SIAC2025 antes de actualización - 2026-02-08)
 
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
@@ -111,11 +129,46 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+<<<<<<< HEAD
       resultado.innerHTML = renderMascota(data);
 
     } catch (err) {
       console.error(err);
       resultado.innerHTML = `<p class="text-red-600">❌ ${err.message || 'Error del sistema'}</p>`;
+=======
+      if (data.extraviada && data.id_extravio) {
+        resultado.innerHTML = `
+          <div class="p-4 border border-red-300 bg-red-50 rounded">
+            <p class="font-bold text-red-700">🚨 Mascota extraviada</p>
+            <p><strong>Nombre:</strong> ${data.nombre}</p>
+            <p><strong>Raza:</strong> ${data.raza}</p>
+            <p><strong>Ciudad:</strong> ${data.ciudad}</p>
+            <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
+               href="https://petbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
+              📩 Contactar tutor
+            </a>
+          </div>`;
+        return;
+      }
+
+      resultado.innerHTML = `
+        <div class="p-4 border border-yellow-300 bg-yellow-50 rounded">
+          <p class="font-bold text-yellow-700">
+            ⚠️ Mascota sin reporte de extravío
+          </p>
+          <p><strong>Nombre:</strong> ${data.nombre}</p>
+          <p><strong>Raza:</strong> ${data.raza}</p>
+          <p><strong>Ciudad:</strong> ${data.ciudad}</p>
+          <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
+             href="https://petbio.siac2025.com/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
+            📨 Avisar posible extravío
+          </a>
+        </div>`;
+
+    } catch (err) {
+      console.error(err);
+      resultado.innerHTML = `<p class="text-red-600">❌ Error del sistema</p>`;
+>>>>>>> 5784198c (Respaldo completo del estado actual del servidor SIAC2025 antes de actualización - 2026-02-08)
     }
   });
 
