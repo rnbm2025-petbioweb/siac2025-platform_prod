@@ -1,0 +1,104 @@
+console.log(
+  "🔥 busqueda_publica.js cargado",
+  new Date().toISOString()
+);
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const btnEncontre = document.getElementById('btn-encontre');
+  const contenedor  = document.getElementById('busqueda-mascota');
+  const btnBuscar   = document.getElementById('btn-buscar');
+  const input       = document.getElementById('codigo-mascota');
+  const resultado   = document.getElementById('resultado-busqueda');
+
+  /* =====================================================
+     Mostrar / ocultar buscador
+  ===================================================== */
+  btnEncontre.addEventListener('click', () => {
+    contenedor.classList.toggle('hidden');
+  });
+
+  /* =====================================================
+     Buscar mascota (POST cross-domain)
+  ===================================================== */
+  btnBuscar.addEventListener('click', async () => {
+
+    const codigo = input.value.trim();
+
+    // Validación rápida frontend
+    if (!/^\d{6}$/.test(codigo)) {
+      resultado.innerHTML =
+        `<p class="text-red-600">⚠️ Ingresa exactamente 6 dígitos.</p>`;
+      return;
+    }
+
+    resultado.innerHTML = '🔍 Buscando...';
+
+    const endpoint =
+      'https://petbio.siac2025.com/buscar_mascota_publica.php';
+
+    console.log("📡 POST →", endpoint);
+
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: `codigo=${encodeURIComponent(codigo)}`
+      });
+
+      if (!res.ok) {
+        throw new Error('Respuesta no válida');
+      }
+
+      const data = await res.json();
+
+      // No encontrada
+      if (!data.encontrada) {
+        resultado.innerHTML =
+          `<p class="text-gray-600">❌ No se encontró ninguna mascota.</p>`;
+        return;
+      }
+
+      // Mascota con extravío
+      if (data.extraviada) {
+        resultado.innerHTML = `
+          <div class="p-4 border rounded bg-red-50">
+            <p class="font-bold text-red-700">
+              🚨 Mascota reportada como extraviada
+            </p>
+            <p><strong>Nombre:</strong> ${data.nombre}</p>
+            <p><strong>Raza:</strong> ${data.raza}</p>
+            <p><strong>Ciudad:</strong> ${data.ciudad}</p>
+
+            <a
+              href="https://petbio.siac2025.com/contactar_extravio.php?id_mascota=${data.id_mascota}"
+              class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
+            >
+              📩 Contactar tutor
+            </a>
+          </div>
+        `;
+        return;
+      }
+
+      // Mascota sin extravío
+      resultado.innerHTML = `
+        <div class="p-4 border rounded bg-green-50">
+          <p class="font-bold text-green-700">
+            ✅ Mascota registrada (sin reporte de extravío)
+          </p>
+          <p><strong>Nombre:</strong> ${data.nombre}</p>
+          <p><strong>Raza:</strong> ${data.raza}</p>
+          <p><strong>Ciudad:</strong> ${data.ciudad}</p>
+        </div>
+      `;
+
+    } catch (error) {
+      console.error(error);
+      resultado.innerHTML =
+        `<p class="text-red-600">❌ Error al consultar el sistema.</p>`;
+    }
+  });
+});

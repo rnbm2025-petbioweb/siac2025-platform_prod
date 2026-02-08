@@ -1,3 +1,4 @@
+ cat index.html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -36,7 +37,6 @@
       }
     }
 </script>
-
 <meta name="google-adsense-account" content="ca-pub-1658139943154048">
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1658139943154048"crossorigin="anonymous"></script>
@@ -66,29 +66,9 @@
     Fundador PETBIO11 RNBM
   </p>
 </div>
- <header class="bg-white shadow-md sticky top-0 z-50">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
   <div class="max-w-screen-xl mx-auto px-4 py-4 flex justify-between items-center">
-
-    <!-- BOTÓN MENÚ SUPERIOR -->
-    <button
-      id="btn-dropdown-menu-top"
-      class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-petbioazul text-white"
-      aria-expanded="false"
-      aria-controls="dropdownMenu-top"
-    >
-      ☰ Menú
-    </button>
-
-    <!-- CONTENEDOR MENÚ SUPERIOR -->
-    <div
-      id="dropdownMenu-top"
-      class="hidden absolute right-4 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
-    >
-      <a href="/" class="block px-4 py-2 text-sm hover:bg-gray-100">🏠 Inicio</a>
-      <a href="/proyecto.html" class="block px-4 py-2 text-sm hover:bg-gray-100">📌 Proyecto</a>
-      <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm hover:bg-gray-100">📋 Casos de uso</a>
-      <a href="/contacto.html" class="block px-4 py-2 text-sm hover:bg-gray-100">📬 Contacto</a>
-    </div>
 
     <!-- LOGO LADO IZQUIERDO -->
     <a href="/" class="flex items-center gap-2 text-xl font-bold text-emerald-600">
@@ -97,247 +77,97 @@
 
     <!-- LOGO IMAGEN -->
     <a href="/" class="flex items-center space-x-2">
-      <img
-        src="./imagenes_guias_2025/logo_petbio_transparente.png"
-        alt="Logo SIAC2025"
-        class="h-10 w-auto"
-      >
+      <img src="./imagenes_guias_2025/logo_petbio_transparente.png" alt="Logo SIAC2025" class="h-10 w-auto">
       <span class="font-bold text-gray-800 text-lg">SIAC 2025</span>
     </a>
 
     <!-- BOTÓN HAMBURGUESA (solo en móvil) -->
-    <button
-      id="btn-mobile-menu"
-      class="md:hidden text-gray-700 focus:outline-none"
-    >
-      <svg
-        class="w-6 h-6"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M4 6h16M4 12h16M4 18h16"
-        />
+    <button onclick="toggleMobileMenu()" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"/>
       </svg>
     </button>
 
     <!-- MENÚ DESKTOP -->
     <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
-      <a
-        href="https://petbio.siac2025.com/dir_formularios/registropetbio.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Registro PETBIO
-      </a>
-      <a
-        href="https://registro.siac2025.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        PETBIO
-      </a>
-      <a
-        href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Login PETBIO
-      </a>
-      <a
-        href="https://petbio.siac2025.com/dir_modulos/identidad_rubm.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Identidad RNBM
-      </a>
-      <a
-        href="https://registro.siac2025.com/category/noticias-mas/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Noticias
-      </a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
       <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
-      <a
-        href="https://petbio11rubm2025.blogspot.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Blog PETBIO
-      </a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
     </nav>
   </div>
 
   <!-- MENÚ MÓVIL -->
-  <div
-    id="mobileMenu"
-    class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t"
-  >
+  <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t">
     <nav class="flex flex-col gap-2 pt-2">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
-      <a
-        href="https://petbio.siac2025.com/dir_formularios/registropetbio.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Registro PETBIO
-      </a>
-      <a
-        href="https://registro.siac2025.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        PETBIO
-      </a>
-      <a
-        href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Login PETBIO
-      </a>
-      <a
-        href="https://petbio.siac2025.com/dir_modulos/identidad_rubm.php"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Identidad RNBM
-      </a>
-      <a
-        href="https://registro.siac2025.com/category/noticias-mas/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Noticias
-      </a>
+      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
+      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
       <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
-      <a
-        href="https://petbio11rubm2025.blogspot.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="hover:text-emerald-600"
-      >
-        Blog PETBIO
-      </a>
+      <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
     </nav>
   </div>
 </header>
 
 
+  <header class="bg-white p-6 shadow-md text-center rounded-b-2xl">
+    <h1 class="text-3xl font-bold text-petbioazul mb-2">🐾 PETBIO Registro Biométrico</h1>
+    <p class="text-base text-gray-600 text-justify">Sistema centralizado para identificación única de mascotas</p>
+  </header>
+
+
 <!-- BLOQUE ENCONTRÉ UNA MASCOTA (FLUJO PÚBLICO) -->
-<section class="max-w-3xl mx-auto mt-8 px-4 text-center">
+<section class="max-w-3xl mx-auto mt-10 px-4 text-center">
 
   <!-- BOTÓN PRINCIPAL -->
   <button
-  id="btn-encontre"
-  type="button"
-  class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-lg"
-  aria-expanded="false"
-  aria-controls="busqueda-mascota"
->
-  🐾 Encontré una mascota<br>
-  <span class="text-sm">Haz clic aquí</span>
-</button>
+    id="btn-encontre"
+    class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg text-lg shadow-md">
+    🐾 Encontré una mascota
+  </button>
 
- <!-- ENLACE AL VIDEO -->
-<div class="mt-4 text-center">
-  <a href="https://youtu.be/TAThLNKTxvM" target="_blank" rel="noopener noreferrer"
-     class="text-blue-600 hover:text-blue-800 underline font-semibold">
-    🎥 Ver Video Explicativo en YouTube
-  </a>
-</div>
-
-
-<!-- ENLACE AL VIDEO -->
-<div class="mt-4 text-center">
-  <a href="https://www.youtube.com/shorts/89nnBooEQsg" target="_blank" rel="noopener noreferre>"
-    class="text-blue-600 hover:text-blue-800 underline font-semibold">
-    🎥 Ver Video Caso de Extravió, gestión de búsqueda, recuperación y regreso a casa de tus Mascotas en YouTube
-  </a>
-</div>
-
-<br>
-
-  <!-- CONTENEDOR DE BÚSQUEDA (OCULTO POR DEFECTO) -->
+  <!-- CONTENEDOR DE BÚSQUEDA -->
   <div
     id="busqueda-mascota"
-    class="hidden mt-6 p-4 border rounded bg-gray-50 text-left"
-    role="region"
-    aria-labelledby="btn-encontre"
-  >
+    class="hidden mt-6 p-6 border rounded-lg bg-gray-50 text-left">
 
-    <h3 class="font-bold mb-3 text-lg text-gray-800">
-      🔎 Buscar mascota por distintivo
+    <h3 class="font-bold mb-3 text-lg">
+      Buscar por número del distintivo
     </h3>
-
-    <!-- INPUT CÓDIGO -->
-    <label for="codigo-mascota" class="block text-sm font-medium text-gray-700 mb-1">
-      Código de 6 dígitos
-    </label>
 
     <input
       type="text"
       id="codigo-mascota"
-      inputmode="numeric"
-      pattern="[0-9]{6}"
       maxlength="6"
-      placeholder="Ej: 867645"
-      class="border p-2 rounded w-full mb-4 focus:ring-2 focus:ring-blue-400 focus:outline-none"
-      aria-describedby="ayuda-codigo"
-    />
+      inputmode="numeric"
+      placeholder="Ej: 123456"
+      class="border p-3 rounded w-full mb-4 text-lg">
 
-    <p id="ayuda-codigo" class="text-xs text-gray-500 mb-3">
-      Ingresa exactamente los 6 números que aparecen en el distintivo.
-    </p>
-
-    <!-- BOTÓN BUSCAR -->
     <button
-      id="btn-buscar"
-      type="button"
-      class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow focus:outline-none focus:ring-2 focus:ring-blue-400"
-    >
-      🔍 Buscar
-    </button>
+  id="btn-buscar"
+  type="button"
+  class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded text-lg">
+  🔍 Buscar mascota
+</button>
+
 
     <!-- RESULTADO -->
-    <div
-      id="resultado-busqueda"
-      class="mt-4"
-      aria-live="polite"
-    ></div>
+    <div id="resultado-busqueda" class="mt-6"></div>
 
   </div>
-
 </section>
 
-
-
-<section class="bg-white p-6 shadow-md text-center rounded-b-2xl">
-  <h1 class="text-3xl font-bold text-petbioazul mb-2">
-    🐾 PETBIO Registro Biométrico
-  </h1>
-  <p class="text-base text-gray-600 text-justify">
-    Sistema centralizado para identificación única de mascotas
-  </p>
-</section>
-
+<!-- JS -->
+<script src="/js/busqueda_publica.js?v=20251226" defer></script>
 
 
 
@@ -396,10 +226,81 @@
     <p class="text-gray-700 text-justify">
       En 2025, muchos hablan de inteligencia artificial, blockchain y automatización. Pocos hablan de proteger la vida. PETBIO11 toma esa bandera y la convierte en acción. Nuestra tecnología no compite, no vende publicidad: cuida.
     </p>
+    <p class="text-gray-700 text-justify">
+      Es un proyecto que ha crecido con esfuerzo, sin subsidios, sin respaldo comercial, pero con una misión clara: <em>transformar el respeto por la vida en una política pública y un derecho para los animales</em>.
+    </p>
+    <p class="text-gray-700 text-justify">
+      Este no es solo un sistema. Es una plataforma de conciencia. Y apenas comienza.
+    </p>
+  </article>
 
-</article>
+</section>
 
-   <!-- Contenido legal y enlaces legales -->
+
+
+<!-- Menú principal desplegable -->
+<div class="flex justify-end p-4">
+  <div class="relative inline-block text-left">
+<!--
+<button onclick="toggleMenu()" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-petbioturquesa text-white font-bold hover:bg-petbioverde">
+  ☰ Menú
+</button>
+
+
+<button onclick="toggleMenu()" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-lg border-2 border-petbioazul bg-petbioazul text-white font-semibold shadow-md hover:bg-petbioverde transition duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+  Menú
+</button>  -->
+<button onclick="toggleMenu()" class="inline-flex items-center justify-center gap-2 px-5 py-2 rounded-lg border-2 border-[#27445D] bg-[#27445D] text-white font-semibold shadow-md hover:bg-[#497D74] transition duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+  </svg>
+  Menú
+</button>
+
+
+
+
+    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
+      <a href="https://siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
+      <a href="https://registro.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🔗 PETBIO – SIAC</a>
+      <a href="/proyecto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📌 Proyecto PETBIO11</a>
+      <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📋 Casos de Uso</a>
+      <a href="/tecnologia.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">�� Tecnología</a>
+      <a href="/alianzas.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🤝 Alianzas</a>
+      <a href="/contacto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📬 Contacto</a>
+      <a href="/gracias.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">✅ Gracias</a>
+      <a href="https://registro.siac2025.com/2025/06/28/1041/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🛡️ Política de Privacidad</a>
+      <a href="https://registro.siac2025.com/2025/06/28/1039/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">⚖️ Términos y Condiciones</a>
+      <a href="https://petbio11rubm2025.blogspot.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📖 Blog PETBIO</a>
+      <a href="https://siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('dropdownMenu');
+    menu.classList.toggle('hidden');
+  }
+</script>
+
+
+    <!-- Anuncio AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1658139943154048"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="autorelaxed"
+     data-ad-client="ca-pub-1658139943154048"
+     data-ad-slot="2290295378"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+    <!-- Contenido legal y enlaces legales -->
     <div id="politicas" class="space-y-10">
       <!-- Aquí van los bloques legales que ya escribiste -->
       <!-- Puedes pegar directamente todos los divs legales que ya tienes (política de privacidad, términos, cookies, etc.) -->
@@ -525,6 +426,53 @@
   <p>Este sitio es operado por <strong>Juan Carlos Osorno Londoño</strong>. Uso informativo, sin fines de lucro. Derechos reservados conforme a la legislación colombiana.</p>
 </div>
 
+
+<!-- Noticias PETBIO11 desde el Registro de SIAC --
+<section id="publicaciones-petbio" class="max-w-3xl mx-auto mt-12 space-y-6">
+  <h2 class="text-2xl font-bold text-petbioazul text-center">📢 Noticias PETBIO11 desde el Registro</h2>
+  <div id="rss-feed" class="space-y-4"></div>
+</section>
+
+<script>
+  async function cargarRSS() {
+    const rssUrl = 'https://registro.siac2025.com/feed/';
+    const proxy = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl);
+
+    try {
+      const response = await fetch(proxy);
+      const data = await response.json();
+
+      const contenedor = document.getElementById('rss-feed');
+      data.items.slice(0, 3).forEach(item => {
+        const div = document.createElement('div');
+        div.className = "bg-white p-6 rounded-lg shadow-md";
+        div.innerHTML = `
+          <h3 class="text-xl font-semibold text-petbioazul mb-2">${item.title}</h3>
+          <p class="text-gray-700 mb-2">${item.pubDate.split(' ')[0]}</p>
+          <p class="text-gray-600 mb-4">${item.description.substring(0, 200)}...</p>
+          <a href="${item.link}" target="_blank" class="inline-block bg-petbioverde text-white px-4 py-2 rounded font-semibold hover:bg-[#3c665e]">Leer más</a>
+        `;
+        contenedor.appendChild(div);
+      });
+    } catch (error) {
+      console.error('Error al cargar el feed:', error);
+      document.getElementById('rss-feed').innerHTML = "<p class='text-center text-gray-500'>No se pudieron cargar las publicaciones.</p>";
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', cargarRSS);
+</script>
+-->
+
+
+<section id="noticias-petbio" class="my-8 px-4 max-w-5xl mx-auto">
+  <h2 class="text-2xl font-bold text-petbioverde mb-4">📢 Noticias desde el Registro PETBIO11</h2>
+  <div id="feedNoticias" class="grid md:grid-cols-3 gap-6 text-sm text-gray-800">
+    <p id="feedError" class="col-span-full text-center text-red-500 hidden">No se pudieron cargar las publicaciones.</p>
+  </div>
+</section>
+
+
 <section class="max-w-3xl mx-auto py-8 space-y-6">
 
   <!-- Video 1 -->
@@ -554,10 +502,10 @@
   <h2 class="text-xl font-bold mb-4">Cuidado integral para tus Mascotas</h2>
   <h3 class="mb-6 text-lg font-medium">Querido visitante, continúe con su Registro de Usuario</h3>
 
-  <a href="https://petbio.siac2025.com/dir_formularios/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
+  <a href="https://petbio.siac2025.com/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
     🐾 Regístrate ahora
   </a>
-  <a href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
+  <a href="https://petbio.siac2025.com/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
     🔑 Ya tengo cuenta
   </a>
 
@@ -574,45 +522,11 @@
     <!-- Botones de acción -->
   </main>
 
-<!-- Menú principal desplegable -->
-<div class="flex justify-end p-4 relative">
-  <div class="relative inline-block text-left">
-
-    <!-- BOTÓN -->
-    <button
-      id="btn-dropdown-menu-footer"
-      type="button"
-      class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-petbioturquesa text-white font-bold hover:bg-petbioverde"
-      aria-haspopup="true"
-      aria-expanded="false"
-    >
-      ☰ Menú
-    </button>
-
-    <!-- CONTENEDOR -->
-    <div
-      id="dropdownMenu-footer"
-      class="hidden absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10"
-      role="menu"
->
-
-
-
-      <a href="https://siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
-      <a href="https://registro.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🔗 PETBIO – SIAC</a>
-      <a href="/proyecto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📌 Proyecto PETBIO11</a>
-      <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📋 Casos de Uso</a>
-      <a href="/tecnologia.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">   Tecnología</a>
-      <a href="/alianzas.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🤝 Alianzas</a>
-      <a href="/contacto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📬 Contacto</a>
-      <a href="/gracias.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">✅ Gracias</a>
-      <a href="https://registro.siac2025.com/2025/06/28/1041/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🛡️ Política de Privacidad</a>
-      <a href="https://registro.siac2025.com/2025/06/28/1039/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">⚖️ Términos y Condiciones</a>
-      <a href="https://petbio11rubm2025.blogspot.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📖 Blog PETBIO</a>
-      <a href="https://siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
-     </div>
-</div>
-</div>
+<!-- Aviso de Cookies -
+<div id="cookie-banner" class="fixed bottom-4 left-4 right-4 bg-white shadow-lg rounded-lg p-4 border text-sm z-50">
+  <p class="mb-2">🍪 Este sitio web utiliza cookies para mejorar su experiencia. Al continuar navegando, acepta su uso. <a href="https://site-mscdp54gx.godaddysites.com/pol%C3%ADtica-de-privacidad-1" target="_blank" class="underline text-blue-600">Leer más</a></p>
+  <button onclick="document.getElementById('cookie-banner').style.display='none'" class="bg-petbioverde text-white px-4 py-2 rounded">Aceptar</button>
+</div>  -->
 
 
 <!-- Aviso de Cookies -->
@@ -622,20 +536,68 @@
     <a href="https://site-mscdp54gx.godaddysites.com/pol%C3%ADtica-de-privacidad-1" target="_blank" class="underline text-blue-600">Leer más</a>
   </p>
   <div class="text-right">
-    <button id="btn-cookie-accept" class="bg-petbioverde text-white px-4 py-2 rounded">
+    <button onclick="document.getElementById('cookie-banner').style.display='none'" class="bg-petbioverde text-white px-4 py-2 rounded hover:bg-[#3c665e]">
       Aceptar y Cerrar
     </button>
   </div>
 </div>
 
+
   <footer class="text-center text-sm text-gray-600 mt-10 py-6">
     &copy; 2025 PETBIO Registro Biométrico | RNBM Colombia
   </footer>
 
-<script src="/js/ui.js"></script>
-<script src="/js/busqueda_publica.js?v=20260112"></script>
+<script>
+  async function cargarNoticias() {
+    const contenedor = document.getElementById('feedNoticias');
+    const errorMsg = document.getElementById('feedError');
 
+    try {
+      const res = await fetch('https://api.rss2json.com/v1/api.json?rss_url=https://registro.siac2025.com/feed/');
+      const data = await res.json();
+
+      if (data.status !== 'ok') throw new Error('Feed inválido');
+
+      const publicaciones = data.items.slice(0, 3); // Solo 3 noticias
+
+      publicaciones.forEach(pub => {
+        const card = document.createElement('article');
+        card.className = "bg-white rounded-xl shadow p-4 hover:shadow-md transition";
+
+        card.innerHTML = `
+          <img src="${pub.thumbnail || 'https://registro.siac2025.com/wp-content/uploads/2025/07/cropped-IMG-20250705-WA0006.jpg'}"
+               alt="${pub.title}" class="w-full h-40 object-cover rounded-md mb-3">
+          <h3 class="font-semibold text-lg text-petbioturquesa mb-2">${pub.title}</h3>
+          <p class="text-sm text-gray-700 mb-3">${pub.description.replace(/<[^>]+>/g, '').substring(0, 140)}...</p>
+          <a href="${pub.link}" target="_blank" class="text-petbioverde font-medium hover:underline">Leer más</a>
+        `;
+
+        contenedor.appendChild(card);
+      });
+
+    } catch (error) {
+      console.error('Error al cargar el feed:', error);
+      errorMsg.classList.remove('hidden');
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', cargarNoticias);
+</script>
+
+
+<!-- <script src="/js/busqueda_publica.js" defer></script> -->
+
+<script src="/js/busqueda_publica.js?v=20251226" defer></script>
+
+<script>
+  function toggleMobileMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
 
 
 </body>
 </html>
+
+
