@@ -7,3 +7,4 @@ siac2025-platform/
 *.sql
 Residuos/
 backup_*/
+cloudflared.deb
