@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const res = await fetch(
-        'https://petbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
+        'https://publicpetbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Raza:</strong> ${data.raza}</p>
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
             <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
-               href="https://petbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
+               href="https://publicpetbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
               📩 Contactar tutor
             </a>
           </div>`;
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><strong>Raza:</strong> ${data.raza}</p>
           <p><strong>Ciudad:</strong> ${data.ciudad}</p>
           <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
-             href="https://petbio.siac2025.com/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
+             href="https://publicpetbio.siac2025.com/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
             📨 Avisar posible extravío
           </a>
         </div>`;
