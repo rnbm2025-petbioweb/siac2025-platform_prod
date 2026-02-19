@@ -1,4 +1,3 @@
-
 /* =========================================================
    PETBIO – BÚSQUEDA PÚBLICA DE MASCOTA
    Fecha: 12-01-2026
@@ -86,4 +85,3 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
-
