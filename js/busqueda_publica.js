@@ -1,13 +1,11 @@
+/* =========================================================
+   PETBIO – BÚSQUEDA PÚBLICA DE MASCOTA
+   Rama: main_mysql (usa backend MySQL del VPS)
+   ========================================================= */
+
 console.log("🔥 busqueda_publica.js cargado", new Date().toISOString());
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  /* ===============================
-     API SIEMPRE EN RENDER
-  =============================== */
-  const API_BASE = "https://publicpetbio.siac2025.com";
-
-  console.log("🌐 API_BASE:", API_BASE);
 
   /* ===============================
      REFERENCIAS DOM
@@ -26,6 +24,12 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("✅ Búsqueda pública inicializada");
 
   /* ===============================
+     API BASE → MySQL VPS
+  =============================== */
+  const API_BASE = location.origin;
+  console.log("🌐 API_BASE:", API_BASE);
+
+  /* ===============================
      MOSTRAR / OCULTAR BUSCADOR
   =============================== */
   btnEncontre.addEventListener("click", () => {
@@ -34,7 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ===============================
-     BUSCAR MASCOTA
+     ENTER = BUSCAR
+  =============================== */
+  input.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") btnBuscar.click();
+  });
+
+  /* ===============================
+     BOTÓN BUSCAR
   =============================== */
   btnBuscar.addEventListener("click", async (e) => {
     e.preventDefault();
@@ -103,6 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
              📨 Avisar posible extravío
           </a>
         </div>`;
+
     } catch (err) {
       console.error("❌ Error en búsqueda pública:", err);
       resultado.innerHTML = `<p class="text-red-600">❌ Error del sistema</p>`;
