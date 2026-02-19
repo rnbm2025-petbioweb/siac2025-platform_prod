@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resultado.innerHTML = '🔍 Buscando...';
 
     const endpoint =
-      'https://petbio.siac2025.com/buscar_mascota_publica.php';
+      'https://publicpetbio.siac2025.com/buscar_mascota_publica.php';
 
     console.log("📡 POST →", endpoint);
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
 
             <a
-              href="https://petbio.siac2025.com/contactar_extravio.php?id_mascota=${data.id_mascota}"
+              href="https://publicpetbio.siac2025.com/contactar_extravio.php?id_mascota=${data.id_mascota}"
               class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
             >
               📩 Contactar tutor

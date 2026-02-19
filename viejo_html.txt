@@ -14,8 +14,8 @@
   <meta name="author" content="PETBIO11 RNBM">
   <meta property="og:title" content="PETBIO Registro Biométrico">
   <meta property="og:description" content="Registro Nacional Biométrico de Mascotas - PETBIO11">
-  <meta property="og:image" content="https://siac2025.com/img/logo_petbio.png">
-  <meta property="og:url" content="https://siac2025.com">
+  <meta property="og:image" content="https://public.siac2025.com/img/logo_petbio.png">
+  <meta property="og:url" content="https://public.siac2025.com">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Tailwind CSS -->
@@ -93,10 +93,10 @@
     <!-- MENÚ DESKTOP -->
     <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
-      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://publicpetbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
       <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
-      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
-      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://publicpetbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://publicpetbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
       <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
       <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
       <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
@@ -107,10 +107,10 @@
   <div id="mobileMenu" class="md:hidden hidden px-4 pb-4 bg-white text-sm font-medium text-gray-700 border-t">
     <nav class="flex flex-col gap-2 pt-2">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
-      <a href="https://petbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
+      <a href="https://publicpetbio.siac2025.com/registropetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Registro PETBIO</a>
       <a href="https://registro.siac2025.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">PETBIO</a>
-      <a href="https://petbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
-      <a href="https://petbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
+      <a href="https://publicpetbio.siac2025.com/loginpetbio.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Login PETBIO</a>
+      <a href="https://publicpetbio.siac2025.com/identidad_rubm.php" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Identidad RNBM</a>
       <a href="https://registro.siac2025.com/category/noticias-mas/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Noticias</a>
       <a href="/contacto.html" class="hover:text-emerald-600">Contacto</a>
       <a href="https://petbio11rubm2025.blogspot.com/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-600">Blog PETBIO</a>
@@ -264,7 +264,7 @@
 
 
     <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-10">
-      <a href="https://siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
+      <a href="https://public.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
       <a href="https://registro.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🔗 PETBIO – SIAC</a>
       <a href="/proyecto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📌 Proyecto PETBIO11</a>
       <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📋 Casos de Uso</a>
@@ -275,7 +275,7 @@
       <a href="https://registro.siac2025.com/2025/06/28/1041/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🛡️ Política de Privacidad</a>
       <a href="https://registro.siac2025.com/2025/06/28/1039/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">⚖️ Términos y Condiciones</a>
       <a href="https://petbio11rubm2025.blogspot.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📖 Blog PETBIO</a>
-      <a href="https://siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
+      <a href="https://public.siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
     </div>
   </div>
 </div>
@@ -502,10 +502,10 @@
   <h2 class="text-xl font-bold mb-4">Cuidado integral para tus Mascotas</h2>
   <h3 class="mb-6 text-lg font-medium">Querido visitante, continúe con su Registro de Usuario</h3>
 
-  <a href="https://petbio.siac2025.com/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
+  <a href="https://publicpetbio.siac2025.com/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
     🐾 Regístrate ahora
   </a>
-  <a href="https://petbio.siac2025.com/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
+  <a href="https://publicpetbio.siac2025.com/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
     🔑 Ya tengo cuenta
   </a>
 

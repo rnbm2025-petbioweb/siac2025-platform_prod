@@ -15,8 +15,8 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
   <meta name="author" content="PETBIO11 RNBM">
   <meta property="og:title" content="PETBIO Registro Biométrico">
   <meta property="og:description" content="Registro Nacional Biométrico de Mascotas - PETBIO11">
-  <meta property="og:image" content="https://siac2025.com/img/logo_petbio.png">
-  <meta property="og:url" content="https://siac2025.com">
+  <meta property="og:image" content="https://public.siac2025.com/img/logo_petbio.png">
+  <meta property="og:url" content="https://public.siac2025.com">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Tailwind CSS -->
@@ -131,7 +131,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
     <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/registropetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/registropetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -147,7 +147,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/loginpetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -155,7 +155,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         Login PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_modulos/identidad_rubm.php"
+        href="https://publicpetbio.siac2025.com/dir_modulos/identidad_rubm.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -190,7 +190,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
     <nav class="flex flex-col gap-2 pt-2">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/registropetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/registropetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -206,7 +206,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/loginpetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -214,7 +214,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         Login PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_modulos/identidad_rubm.php"
+        href="https://publicpetbio.siac2025.com/dir_modulos/identidad_rubm.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -536,10 +536,10 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
   <h2 class="text-xl font-bold mb-4">Cuidado integral para tus Mascotas</h2>
   <h3 class="mb-6 text-lg font-medium">Querido visitante, continúe con su Registro de Usuario</h3>
 
-  <a href="https://petbio.siac2025.com/dir_formularios/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
+  <a href="https://publicpetbio.siac2025.com/dir_formularios/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
     🐾 Regístrate ahora
   </a>
-  <a href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
+  <a href="https://publicpetbio.siac2025.com/dir_formularios/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
     🔑 Ya tengo cuenta
   </a>
 
@@ -580,7 +580,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
 
 
 
-      <a href="https://siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
+      <a href="https://public.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
       <a href="https://registro.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🔗 PETBIO – SIAC</a>
       <a href="/proyecto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📌 Proyecto PETBIO11</a>
       <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📋 Casos de Uso</a>
@@ -591,7 +591,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
       <a href="https://registro.siac2025.com/2025/06/28/1041/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🛡️ Política de Privacidad</a>
       <a href="https://registro.siac2025.com/2025/06/28/1039/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">⚖️ Términos y Condiciones</a>
       <a href="https://petbio11rubm2025.blogspot.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📖 Blog PETBIO</a>
-      <a href="https://siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
+      <a href="https://public.siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
      </div>
 </div>
 </div>
@@ -676,7 +676,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const res = await fetch(
-        'https://petbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
+        'https://publicpetbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -702,7 +702,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Raza:</strong> ${data.raza}</p>
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
             <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
-               href="https://petbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
+               href="https://publicpetbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
               📩 Contactar tutor
             </a>
           </div>`;
@@ -718,7 +718,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><strong>Raza:</strong> ${data.raza}</p>
           <p><strong>Ciudad:</strong> ${data.ciudad}</p>
           <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
-             href="https://petbio.siac2025.com/dir_controladores/contactar_posible_extravio.php?id_mascota=${data.id_mascota}">
+             href="https://publicpetbio.siac2025.com/dir_controladores/contactar_posible_extravio.php?id_mascota=${data.id_mascota}">
             📨 Avisar posible extravío
           </a>
         </div>`;
@@ -816,8 +816,8 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
   <meta name="author" content="PETBIO11 RNBM">
   <meta property="og:title" content="PETBIO Registro Biométrico">
   <meta property="og:description" content="Registro Nacional Biométrico de Mascotas - PETBIO11">
-  <meta property="og:image" content="https://siac2025.com/img/logo_petbio.png">
-  <meta property="og:url" content="https://siac2025.com">
+  <meta property="og:image" content="https://public.siac2025.com/img/logo_petbio.png">
+  <meta property="og:url" content="https://public.siac2025.com">
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Tailwind CSS -->
@@ -932,7 +932,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
     <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/registropetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/registropetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -948,7 +948,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/loginpetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -956,7 +956,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         Login PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_modulos/identidad_rubm.php"
+        href="https://publicpetbio.siac2025.com/dir_modulos/identidad_rubm.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -991,7 +991,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
     <nav class="flex flex-col gap-2 pt-2">
       <a href="/" class="hover:text-emerald-600">Inicio</a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/registropetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/registropetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -1007,7 +1007,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php"
+        href="https://publicpetbio.siac2025.com/dir_formularios/loginpetbio.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -1015,7 +1015,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
         Login PETBIO
       </a>
       <a
-        href="https://petbio.siac2025.com/dir_modulos/identidad_rubm.php"
+        href="https://publicpetbio.siac2025.com/dir_modulos/identidad_rubm.php"
         target="_blank"
         rel="noopener noreferrer"
         class="hover:text-emerald-600"
@@ -1337,10 +1337,10 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
   <h2 class="text-xl font-bold mb-4">Cuidado integral para tus Mascotas</h2>
   <h3 class="mb-6 text-lg font-medium">Querido visitante, continúe con su Registro de Usuario</h3>
 
-  <a href="https://petbio.siac2025.com/dir_formularios/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
+  <a href="https://publicpetbio.siac2025.com/dir_formularios/registropetbio.php" class="block mb-4 bg-petbioverde text-white font-bold py-3 rounded-lg shadow hover:bg-[#3c665e]">
     🐾 Regístrate ahora
   </a>
-  <a href="https://petbio.siac2025.com/dir_formularios/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
+  <a href="https://publicpetbio.siac2025.com/dir_formularios/loginpetbio.php" class="block mb-4 bg-[#3C6E71] text-white font-bold py-3 rounded-lg shadow hover:bg-[#345e61]">
     🔑 Ya tengo cuenta
   </a>
 
@@ -1381,7 +1381,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
 
 
 
-      <a href="https://siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
+      <a href="https://public.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🏠 Inicio</a>
       <a href="https://registro.siac2025.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🔗 PETBIO – SIAC</a>
       <a href="/proyecto.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📌 Proyecto PETBIO11</a>
       <a href="/casos-de-uso.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📋 Casos de Uso</a>
@@ -1392,7 +1392,7 @@ josornol341@mail:/var/www/siac2025.com$ cat index.html
       <a href="https://registro.siac2025.com/2025/06/28/1041/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">🛡️ Política de Privacidad</a>
       <a href="https://registro.siac2025.com/2025/06/28/1039/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">⚖️ Términos y Condiciones</a>
       <a href="https://petbio11rubm2025.blogspot.com/" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📖 Blog PETBIO</a>
-      <a href="https://siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
+      <a href="https://public.siac2025.com/manual-marca.html" class="block px-4 py-2 text-sm text-petbioazul hover:bg-gray-100">📘 Manual de Marca</a>
      </div>
 </div>
 </div>
@@ -1477,7 +1477,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const res = await fetch(
-        'https://petbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
+        'https://publicpetbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -1503,7 +1503,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Raza:</strong> ${data.raza}</p>
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
             <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
-               href="https://petbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
+               href="https://publicpetbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
               📩 Contactar tutor
             </a>
           </div>`;
@@ -1519,7 +1519,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><strong>Raza:</strong> ${data.raza}</p>
           <p><strong>Ciudad:</strong> ${data.ciudad}</p>
           <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
-             href="https://petbio.siac2025.com/dir_controladores/contactar_posible_extravio.php?id_mascota=${data.id_mascota}">
+             href="https://publicpetbio.siac2025.com/dir_controladores/contactar_posible_extravio.php?id_mascota=${data.id_mascota}">
             📨 Avisar posible extravío
           </a>
         </div>`;

@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     resultado.innerHTML = '🔍 Buscando...';
 
-    console.log("📡 Enviando POST a:", "https://petbio.siac2025.com/buscar_mascota_publica.php");
+    console.log("📡 Enviando POST a:", "https://publicpetbio.siac2025.com/buscar_mascota_publica.php");
 
 
     try {
-      const res = await fetch('https://petbio.siac2025.com/buscar_mascota_publica.php', {
+      const res = await fetch('https://publicpetbio.siac2025.com/buscar_mascota_publica.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: `codigo=${encodeURIComponent(codigo)}`

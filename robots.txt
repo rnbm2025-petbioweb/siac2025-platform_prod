@@ -4,5 +4,5 @@ Disallow: /admin/
 Disallow: /login/
 Allow: /
 
-Sitemap: https://siac2025.com/sitemap.xml
+Sitemap: https://public.siac2025.com/sitemap.xml
 EOF
