@@ -1,20 +1,11 @@
-/* =========================================================
-   PETBIO – BÚSQUEDA PÚBLICA DE MASCOTA
-   Fecha: 12-01-2026
-   Versión: producción híbrida (VPS + Render)
-   ========================================================= */
-
 console.log("🔥 busqueda_publica.js cargado", new Date().toISOString());
 
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ===============================
-     DETECTAR ENTORNO (VPS o Render)
+     API SIEMPRE EN RENDER
   =============================== */
-  const API_BASE =
-    location.hostname.includes("public")
-      ? "https://publicpetbio.siac2025.com"
-      : "https://petbio.siac2025.com";
+  const API_BASE = "https://publicpetbio.siac2025.com";
 
   console.log("🌐 API_BASE:", API_BASE);
 
@@ -92,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
             <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
                href="${API_BASE}/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
-              📩 Contactar tutor
+               📩 Contactar tutor
             </a>
           </div>`;
         return;
@@ -109,10 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <p><strong>Ciudad:</strong> ${data.ciudad}</p>
           <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
              href="${API_BASE}/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
-            📨 Avisar posible extravío
+             📨 Avisar posible extravío
           </a>
         </div>`;
-
     } catch (err) {
       console.error("❌ Error en búsqueda pública:", err);
       resultado.innerHTML = `<p class="text-red-600">❌ Error del sistema</p>`;
