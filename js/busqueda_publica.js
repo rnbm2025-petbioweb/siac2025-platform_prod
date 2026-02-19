@@ -1,20 +1,31 @@
 /* =========================================================
    PETBIO – BÚSQUEDA PÚBLICA DE MASCOTA
    Fecha: 12-01-2026
+   Versión: producción híbrida (VPS + Render)
    ========================================================= */
 
 console.log("🔥 busqueda_publica.js cargado", new Date().toISOString());
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ===============================
+     DETECTAR ENTORNO (VPS o Render)
+  =============================== */
+  const API_BASE =
+    location.hostname.includes("public")
+      ? "https://publicpetbio.siac2025.com"
+      : "https://petbio.siac2025.com";
+
+  console.log("🌐 API_BASE:", API_BASE);
 
   /* ===============================
      REFERENCIAS DOM
   =============================== */
-  const btnEncontre = document.getElementById('btn-encontre');
-  const contenedor  = document.getElementById('busqueda-mascota');
-  const btnBuscar   = document.getElementById('btn-buscar');
-  const input       = document.getElementById('codigo-mascota');
-  const resultado   = document.getElementById('resultado-busqueda');
+  const btnEncontre = document.getElementById("btn-encontre");
+  const contenedor  = document.getElementById("busqueda-mascota");
+  const btnBuscar   = document.getElementById("btn-buscar");
+  const input       = document.getElementById("codigo-mascota");
+  const resultado   = document.getElementById("resultado-busqueda");
 
   if (!btnEncontre || !contenedor || !btnBuscar || !input || !resultado) {
     console.error("❌ DOM incompleto para búsqueda pública");
@@ -26,19 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ===============================
      MOSTRAR / OCULTAR BUSCADOR
   =============================== */
-  btnEncontre.addEventListener('click', () => {
-    contenedor.classList.toggle('hidden');
+  btnEncontre.addEventListener("click", () => {
+    contenedor.classList.toggle("hidden");
     input.focus();
   });
 
   /* ===============================
      BUSCAR MASCOTA
   =============================== */
-  btnBuscar.addEventListener('click', async (e) => {
+  btnBuscar.addEventListener("click", async (e) => {
     e.preventDefault();
 
-    const codigo = input.value.replace(/\D/g, '').trim();
+    const codigo = input.value.replace(/\D/g, "").trim();
 
+    /* ---------- Validación ---------- */
     if (!/^\d{6}$/.test(codigo)) {
       resultado.innerHTML = `
         <p class="text-red-600 font-medium">
@@ -51,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const res = await fetch(
-        'https://petbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
+        `${API_BASE}/dir_controladores/buscar_mascota_publica.php`,
         {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: `codigo=${encodeURIComponent(codigo)}`
         }
       );
@@ -64,11 +76,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const data = await res.json();
       console.log("📦 Backend:", data);
 
+      /* ---------- No encontrada ---------- */
       if (!data.encontrada) {
         resultado.innerHTML = `<p>❌ Mascota no encontrada</p>`;
         return;
       }
 
+      /* ---------- Mascota extraviada ---------- */
       if (data.extraviada && data.id_extravio) {
         resultado.innerHTML = `
           <div class="p-4 border border-red-300 bg-red-50 rounded">
@@ -77,13 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Raza:</strong> ${data.raza}</p>
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
             <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
-               href="https://petbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
+               href="${API_BASE}/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
               📩 Contactar tutor
             </a>
           </div>`;
         return;
       }
 
+      /* ---------- Mascota encontrada sin reporte ---------- */
       resultado.innerHTML = `
         <div class="p-4 border border-yellow-300 bg-yellow-50 rounded">
           <p class="font-bold text-yellow-700">
@@ -93,13 +108,13 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><strong>Raza:</strong> ${data.raza}</p>
           <p><strong>Ciudad:</strong> ${data.ciudad}</p>
           <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
-             href="https://petbio.siac2025.com/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
+             href="${API_BASE}/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
             📨 Avisar posible extravío
           </a>
         </div>`;
 
     } catch (err) {
-      console.error(err);
+      console.error("❌ Error en búsqueda pública:", err);
       resultado.innerHTML = `<p class="text-red-600">❌ Error del sistema</p>`;
     }
   });
