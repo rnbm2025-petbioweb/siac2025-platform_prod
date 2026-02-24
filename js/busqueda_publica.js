@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   btnEncontre.addEventListener('click', () => {
     contenedor.classList.toggle('hidden');
     input.focus();
-  });                                                                              
+  });
   /* ===============================                                                    BUSCAR MASCOTA                                                                  =============================== */                                                 btnBuscar.addEventListener('click', async (e) => {                                   e.preventDefault();                                                            
     const codigo = input.value.replace(/\D/g, '').trim();
 
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                                                                        resultado.innerHTML = `<p class="text-gray-600">🔍 Buscando...</p>`;           
     try {
       const res = await fetch(
-        'https://petbio.siac2025.com/dir_controladores/buscar_mascota_publica.php',
+        'https://petbio.siac2025.com/dir_controladores/publicos/buscar_mascota_publica.php',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
       const data = await res.json();
-      console.log("📦 Backend:", data);                                            
+      console.log("📦 Backend:", data);
       if (!data.encontrada) {
         resultado.innerHTML = `<p>❌ Mascota no encontrada</p>`;
         return;
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Nombre:</strong> ${data.nombre}</p>                                     <p><strong>Raza:</strong> ${data.raza}</p>
             <p><strong>Ciudad:</strong> ${data.ciudad}</p>
             <a class="inline-block mt-3 bg-red-600 text-white px-4 py-2 rounded"
-               href="https://petbio.siac2025.com/dir_controladores/contactar_extravio.php?id_extravio=${data.id_extravio}">
+               href="https://petbio.siac2025.com/dir_controladores/publicos/contactar_extravio.php?id_extravio=${data.id_extravio}">
               📩 Contactar tutor                                                               </a>
           </div>`;                                                                         return;
       }
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p><strong>Raza:</strong> ${data.raza}</p>
           <p><strong>Ciudad:</strong> ${data.ciudad}</p>
           <a class="inline-block mt-3 bg-yellow-600 text-white px-4 py-2 rounded"
-             href="https://petbio.siac2025.com/dir_controladores/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
+             href="https://petbio.siac2025.com/dir_controladores/publicos/posible_caso_perdida_de_mascota.php?id_mascota=${data.id_mascota}">
             📨 Avisar posible extravío
           </a>
         </div>`;
